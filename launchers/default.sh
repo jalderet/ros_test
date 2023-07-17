@@ -15,7 +15,7 @@ dt-launchfile-init
 # launching app
 roscore &
 sleep 5
-dt-exec python3 -m "my_package.my_publisher_node.py"
+dt-exec rosrun my_package my_publisher_node.py
 
 
 # ----------------------------------------------------------------------------
