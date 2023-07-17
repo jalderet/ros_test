@@ -1,7 +1,7 @@
 # parameters
 ARG REPO_NAME="my-ros-program"
-ARG DESCRIPTION="<DESCRIPTION_HERE>"
-ARG MAINTAINER="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
+ARG DESCRIPTION="baloons"
+ARG MAINTAINER="<Jacob A> (<jalderet@caltech.edu>)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
