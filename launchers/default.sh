@@ -13,7 +13,7 @@ dt-launchfile-init
 # NOTE: Use `dt-exec COMMAND` to run the main process (blocking process)
 
 # launching app
-dt-exec python3 -m "src.my_publisher_node.py"
+dt-exec python3 -m "my_publisher_node.py"
 
 # ----------------------------------------------------------------------------
 # YOUR CODE ABOVE THIS LINE
