@@ -1,12 +1,3 @@
-FROM ubuntu:latest
-RUN apt-get -y update
-RUN apt-get -y install git
-# version info
-RUN \
-  VERSION=$(git rev-parse --short HEAD) && \
-  DATE=$(date +%Y-%m-%dT%H:%M:%S) && \
-  if ! [[ -z "`git status -s`" ]]; then VERSION="!! DIRTY ${VERSION}"; fi && \
-  sed -i "s/@@__VERSION__@@/${VERSION}/g;s/@@__BUILT__@@/${DATE}/g" ./src/main/resources/VERSION.edn
 # parameters
 ARG REPO_NAME="my-ros-program"
 ARG DESCRIPTION="baloons"
